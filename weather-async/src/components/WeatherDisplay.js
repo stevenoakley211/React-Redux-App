@@ -1,0 +1,1 @@
+// res.data.min_temp

@@ -1,18 +1,13 @@
-import React ,{useEffect} from 'react';
-import logo from './logo.svg';
+import React  from 'react';
 import './App.css';
-import axios from 'axios'
+import Search from './components/Search'
+import Weather from './components/Weather'
 function App() {
-  useEffect(()=>{
-    axios
-      .get('https://www.metaweather.com/api/location/2487956/')
-      .then(res => {
-          console.log(res)
-      })
-  })
+ 
   return (
     <div className="App">
-      
+      <Search />
+      <Weather />
     </div>
   );
 }
